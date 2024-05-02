@@ -40,6 +40,9 @@ const clients = [
   },
 ];
 
-console.log(getTotalBalanceByGender(clients, 'male')); // 12053
+const testTask4 = () => {
+  document.getElementById('result').innerHTML = '';
 
-console.log(getTotalBalanceByGender(clients, 'female')); // 8863
+  logOutput(getTotalBalanceByGender, clients, 'male'); // 12053
+  logOutput(getTotalBalanceByGender, clients, 'female'); // 8863
+};
